@@ -1,0 +1,26 @@
+[project]
+name = "dl-md"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Don Bowman"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "trafilatura (>=2.0.0,<3.0.0)",
+    "click (>=8.0.0,<9.0.0)",
+    "requests (>=2.25.0,<3.0.0)"
+]
+
+[project.scripts]
+dl = "dl_md.cli:main"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
