@@ -45,6 +45,11 @@ dl <sitemap-url> [<sitemap-url> ...]
 Download all 'anyx-guide' and 'ufaq' post types from the Agilicus website:
 
 ```bash
+poetry run dl https://www.agilicus.com/anyx-guide-sitemap.xml https://www.agilicus.com/ufaq-sitemap.xml
+```
+
+or, if installed:
+```bash
 dl https://www.agilicus.com/anyx-guide-sitemap.xml https://www.agilicus.com/ufaq-sitemap.xml
 ```
 
